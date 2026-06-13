@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream text-slate-900 antialiased;
+  }
+  /* Scrollbar sutil en tono brand */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { @apply bg-brand-50; }
+  ::-webkit-scrollbar-thumb { @apply bg-brand-300 rounded-full; }
+}
+
+@layer components {
+  .prose-jobs h2 {
+    @apply text-lg font-semibold text-slate-900 mt-6 mb-2;
+  }
+  .prose-jobs ul {
+    @apply list-disc list-inside space-y-1 text-slate-700;
+  }
+  .prose-jobs p {
+    @apply text-slate-700 leading-relaxed mb-3;
+  }
+}
